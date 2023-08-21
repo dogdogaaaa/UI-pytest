@@ -43,7 +43,7 @@ def read_csv_file(file_path):
         for row in reader: # 如过下面没有生成器，那么这里直接全部数据都遍历一遍，如果有生成器就会卡住，一个一个来，接收到next方法才会读取下一行。
             yield row['username'], row['password']
 @pytest.mark.smoke
-@pytest.mark.parametrize('username, password', read_csv_file(r'H:\Develop\Python\Selenium_UI_Project\data\data.csv'))
+@pytest.mark.parametrize('username, password', read_csv_file(r'data/data.csv'))
 def test_001(drivers, username, password):
     zhufeng = zhuifeng_index_page(drivers)
     zhufeng.input_account = username
