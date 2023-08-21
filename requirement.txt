@@ -1,0 +1,8 @@
+selenium
+pytest
+allure-pytest
+pytest-xdist
+pytest-rerunfailures
+pillow
+pywinauto
+ddddocr
