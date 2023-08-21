@@ -9,11 +9,22 @@
 软件架构说明
 
 
-#### 安装教程
+# 安装教程 ：需要安装的库，只需要一键运行  pip3 install -r requirement.txt即可
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+        注意网络不好容易报错，报错之后重新安装即可，
+        selenium
+        pytest
+        allure-pytest
+        多线程并发执行用例插件
+        pytest-xdist
+        失败重跑的插件
+        pytest-rerunfailures
+        图片处理相关的库 可以理解为PIL
+        pillow
+        文件上传的识别文件资源管理器的库
+        pywinauto
+        图片验证码识别的库
+        ddddocr
 
 #### 使用说明
 
