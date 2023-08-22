@@ -50,10 +50,10 @@
 6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
 
 
-# run testcases
+# run all testcases
 pytest
 # run allure report
-pytest --alluredir ./reports testcases/pytest/test_search_baidu_index.py
+pytest --alluredir ./reports testcases/
 # start up serve to browse report
 allure serve ./reports
 # run pytest to choose which you want to run
