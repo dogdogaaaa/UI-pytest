@@ -3,7 +3,11 @@
 #### 介绍
 免费开源的高级selenium自动化框架，开箱即用，复用性高，可适用任何web项目中
 原创作者：小北
-微信：xiaobei_upup
+微信：xiaobei_upup   扫码可添加作者答疑
+![输入图片说明](screenshots/888f3f9e1e8bd0a003aac3d204afaa8.jpg)
+#### 捐赠小北喝瓶水 :sunglasses: 
+![输入图片说明](screenshots/%E6%94%AF%E4%BB%98%E5%AE%9D%E6%94%AF%E4%BB%98%E7%A0%81.jpg)
+![输入图片说明](%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E7%A0%81.jpg)
 
 #### 软件架构
 软件架构说明
