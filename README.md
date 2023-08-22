@@ -27,10 +27,10 @@
         ddddocr
 
 #### 使用说明
-1、先安装对应的库，只需要一键运行  pip3 install -r requirement.txt 即可
-2、再下载对应的webdriver浏览器驱动： https://registry.npmmirror.com/binary.html?path=chromedriver/
-3、再配置浏览器驱动解压文件夹的环境变量
-4、pycharm中运行项目即可，或者项目目录下命令行输入pytest即可运行
+1. 这里是列表文本先安装对应的库，只需要一键运行  pip3 install -r requirement.txt 即可
+2. 这里是列表文本再下载对应的webdriver浏览器驱动： https://registry.npmmirror.com/binary.html?path=chromedriver/
+3. 这里是列表文本再配置浏览器驱动解压文件夹的环境变量
+4. 这里是列表文本pycharm中运行项目即可，或者项目目录下命令行输入pytest即可运行
 
 #### 参与贡献
 
