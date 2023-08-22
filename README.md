@@ -15,7 +15,7 @@
 软件架构说明
 
 
-# 安装教程 ：需要安装的库，只需要一键运行  pip3 install -r requirement.txt即可
+# 安装教程 ：需要安装的库
 
         注意网络不好容易报错，报错之后重新安装即可，
         selenium
@@ -33,8 +33,8 @@
         ddddocr
 
 #### 使用说明
-1. 这里是列表文本先安装对应的库，只需要一键运行  pip3 install -r requirement.txt 即可
-2. 这里是列表文本再下载对应的webdriver浏览器驱动： https://registry.npmmirror.com/binary.html?path=chromedriver/
+1. 这里是列表文本第一步先安装对应的库，只需要一键运行  pip3 install -r requirement.txt 即可安全所有依赖库
+2. 这里是列表文本第二步再下载对应的webdriver浏览器驱动： https://registry.npmmirror.com/binary.html?path=chromedriver/
 3. 这里是列表文本再配置浏览器驱动解压文件夹的环境变量
 4. 这里是列表文本pycharm中运行项目即可，或者项目目录下命令行输入pytest即可运行
 
