@@ -11,9 +11,8 @@
 ![输入图片说明](screenshots/%E6%94%AF%E4%BB%98%E5%AE%9D%E6%94%AF%E4%BB%98%E7%A0%81.jpg)
 ![输入图片说明](%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E7%A0%81.jpg)
 
-#### 软件架构
-软件架构说明
-
+# 软件架构
+selenium+pytest+allure+各种工具函数
 
 # 小北原创高级UI自动化框架亮点 ：
         1、使用pytest-xdist多线程并发执行测试用例，显著缩短用例执行时间
@@ -37,35 +36,18 @@
         19、封装了一个滑动的工具函数，方便实现滑动操作
         20、后续持续更新！！！！！！！！！！！！！！！！！！！！！
 
-# 使用说明
+# 框架安装使用说明
 1. 这里是列表文本第一步先安装对应的库，只需要一键运行  pip3 install -r requirement.txt 即可安全所有依赖库 【注意网络不好容易报错，报错之后重新安装即可】
 2. 这里是列表文本第二步再下载对应的webdriver浏览器驱动： https://registry.npmmirror.com/binary.html?path=chromedriver/
 3. 这里是列表文本再配置浏览器驱动解压文件夹的环境变量
-4. 这里是列表文本pycharm中运行项目即可，或者项目目录下命令行输入pytest即可运行
+4. 【运行测试用例】这里是列表文本pycharm中运行项目即可，或者项目目录下命令行输入pytest即可运行
+5、【运行含有allure测试报告的测试用例】使用pytest运行allure测试报告，只需要使用pytest即可，因为pytest.ini文件中已经配置好了allure的配置参数
+6、【查看allure测试报告】启动浏览器去查看allure测试报告，使用  allure serve ./reports
+7、【选择哪些用例去执行】运行哪些测试用例，冒烟?回归？还是所有用例？在pytest.ini文件中修改addopts中的-m参数，-m "smoke" 即为冒烟！
 
-#### 参与贡献
-
+# 参与贡献
+后续可以进行对本仓库的贡献，不过现在暂时未开放全面的贡献机制
 1.  Fork 本仓库
 2.  新建 Feat_xxx 分支
 3.  提交代码
 4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
-
-
-# run all testcases
-pytest
-# run allure report
-pytest --alluredir ./reports testcases/
-# start up serve to browse report
-allure serve ./reports
-# run pytest to choose which you want to run
-pytest -m test
