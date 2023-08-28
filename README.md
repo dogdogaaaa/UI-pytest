@@ -31,13 +31,13 @@ selenium+pytest+allure+各种工具函数
         20、后续持续更新！！！！！！！！！！！！！！！！！！！！！
 
 # 框架安装使用说明
-1. 这里是列表文本第一步先安装对应的库，只需要一键运行  pip3 install -r requirement.txt 即可安全所有依赖库 【注意网络不好容易报错，报错之后重新安装即可】
-2. 这里是列表文本第二步再下载对应的webdriver浏览器驱动： https://registry.npmmirror.com/binary.html?path=chromedriver/
-3. 这里是列表文本再配置浏览器驱动解压文件夹的环境变量
+1. 第一步先安装对应的库，只需要一键运行  pip3 install -r requirement.txt 即可安全所有依赖库 【注意网络不好容易报错，报错之后重新安装即可】
+2. 第二步再下载对应的webdriver浏览器驱动： https://registry.npmmirror.com/binary.html?path=chromedriver/
+3. 再配置浏览器驱动解压文件夹的环境变量
 4.【运行测试用例】这里是列表文本pycharm中运行项目即可，或者项目目录下命令行输入pytest即可运行
-5. 这里是列表文本【运行含有allure测试报告的测试用例】使用pytest运行allure测试报告，只需要使用pytest即可，因为pytest.ini文件中已经配置好了allure的配置参数
-6. 这里是列表文本【查看allure测试报告】启动浏览器去查看allure测试报告，使用  allure serve ./reports
-7. 这里是列表文本【选择哪些用例去执行】运行哪些测试用例，冒烟?回归？还是所有用例？在pytest.ini文件中修改addopts中的-m参数，-m "smoke" 即为冒烟！
+5.【运行含有allure测试报告的测试用例】使用pytest运行allure测试报告，只需要使用pytest即可，因为pytest.ini文件中已经配置好了allure的配置参数
+6.【查看allure测试报告】启动浏览器去查看allure测试报告，使用  allure serve ./reports
+7.【选择哪些用例去执行】运行哪些测试用例，冒烟?回归？还是所有用例？在pytest.ini文件中修改addopts中的-m参数，-m "smoke" 即为冒烟！
 
 # 参与贡献
 后续可以进行对本仓库的贡献，不过现在暂时未开放全面的贡献机制
