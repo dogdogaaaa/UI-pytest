@@ -3,6 +3,10 @@ pytest
 allure-pytest
 pytest-xdist
 pytest-rerunfailures
+pytest-ordering
 pillow
 pywinauto
 ddddocr
+pyyaml
+requests
+opencv-python

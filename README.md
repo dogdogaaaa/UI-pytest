@@ -25,6 +25,8 @@
         pywinauto
         图片验证码识别的库
         ddddocr
+        颜色识别库
+        opencv-python
 
 #### 使用说明
 

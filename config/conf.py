@@ -52,6 +52,11 @@ class ConfigManager(object):
     ZHUIFENG = "https://exam.wzzz.fun"
     WPS_LOGIN = "https://account.wps.cn/"
     FILE_UPLOAD = "https://letcode.in/file"
+    WMS_URL = "http://192.168.10.129/login?redirect=%2Findex"
+    WHOLE_PATH = "./screenshots/简单验证码.png"
+    CROP_PATH = "./screenshots/crop_pic.png"
+    USERNAME = "admin"
+    PASSWORD = "123456"
     @property
     def log_file(self):
         """日志目录"""

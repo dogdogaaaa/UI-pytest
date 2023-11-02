@@ -3,6 +3,8 @@
 import pytest
 from selenium import webdriver
 
+from common.options_chrome import options1
+
 """
 -------------------------------------------------
    File Name：    
@@ -17,9 +19,10 @@ test_pytest.fixture 这个实现了和unittest的setup，teardown一样的前置
 管理数据库连接，全局管理我们的driver
 """
 
+
 @pytest.fixture(scope='session', autouse=True)
 def drivers():
-    driver = webdriver.Chrome()
+    driver = webdriver.Chrome(options=options1())
     driver.maximize_window()
     yield driver
     driver.quit()
@@ -33,29 +36,6 @@ def drivers():
 
 
 
-
-
-
-
-
-
-# @test_pytest.fixture(scope='session', autouse=True)
-# def drivers(request):
-#     global driver
-#     if driver is None:
-#         driver = webdriver.Chrome()
-#         driver.maximize_window()
-#
-#     def fn():
-#         driver.quit()
-#
-#     request.addfinalizer(fn)
-#     return driver
-
-
-
-
-#
 # @test_pytest.fixture(scope='session', autouse=True)
 # def drivers():
 #     global driver
@@ -71,18 +51,6 @@ def drivers():
 #
 #     yield driver
 #     driver.quit()
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # @test_pytest.hookimpl(hookwrapper=True)
