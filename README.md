@@ -1,3 +1,41 @@
+# 小北原创UI自动化高阶框架selenium+pytest
+
+#### 介绍
+免费开源的高级selenium自动化框架，开箱即用，复用性高，可适用任何web项目中
+原创作者：小北
+微信：xiaobei_upup
+
+#### 软件架构
+软件架构说明
+
+
+# 安装教程 ：需要安装的库，只需要一键运行  pip3 install -r requirement.txt即可
+
+        注意网络不好容易报错，报错之后重新安装即可，
+        selenium
+        pytest
+        allure-pytest
+        多线程并发执行用例插件
+        pytest-xdist
+        失败重跑的插件
+        pytest-rerunfailures
+        图片处理相关的库 可以理解为PIL
+        pillow
+        文件上传的识别文件资源管理器的库
+        pywinauto
+        图片验证码识别的库
+        ddddocr
+        颜色识别库
+        opencv-python
+
+#### 使用说明
+
+1.  xxxx
+2.  xxxx
+3.  xxxx
+
+#### 参与贡献
+
 # 小北原创UI自动化高阶框架selenium+pytest+allure+各种高级工具函数
 
 ## 免费开源的高级selenium的UI自动化框架，开箱即用，复用性高，可适用任何web项目中

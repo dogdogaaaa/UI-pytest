@@ -18,6 +18,8 @@
 """
 from PIL import Image
 import ddddocr
+
+
 def image_identify(driver, ele, whole_name, crop_name):
     """
     :param driver: 浏览器驱动
@@ -27,10 +29,10 @@ def image_identify(driver, ele, whole_name, crop_name):
     :return: 返回验证码识别出来的字符串
     """
     driver.save_screenshot(whole_name)
-    left = ele.location['x'] + 220
-    top = ele.location['y'] + 90
-    right = ele.size['width'] + left + 85
-    height = ele.size['height'] + top + 15
+    left = ele.location['x']
+    top = ele.location['y']
+    right = ele.size['width'] + left
+    height = ele.size['height'] + top
 
     img = Image.open(whole_name).crop((left, top, right, height))
     img.save(crop_name)

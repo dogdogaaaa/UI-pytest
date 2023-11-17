@@ -23,7 +23,6 @@ import time
 import csv
 import threading
 
-
 """
 test_pytest.fixture + 生成器yield   一起实现了和unittest的setup，teardown一样的前置启动，后置清理的装饰器
 """
@@ -36,12 +35,15 @@ def open_baidu(drivers):
     yield
     print("后置")
 
+
 def read_csv_file(file_path):
     """生成器方式去读取csv里面的数据来做数据驱动测试，yield关键字来控制一行一行的读取字典里面的内容（字典里面的数据是隐形的，还未产生，就和奶糖盒子一样的道理）"""
     with open(file_path, 'r', newline='') as file:
         reader = csv.DictReader(file)  # 这是一个迭代器对象，把每次读取出来的数据都放到字典里面存起来，下面用一个for循环一次一次的去读取字典里面的数据，确保不会一次性将所有的数据读取到内存中。
-        for row in reader: # 如过下面没有生成器，那么这里直接全部数据都遍历一遍，如果有生成器就会卡住，一个一个来，接收到next方法才会读取下一行。
+        for row in reader:  # 如过下面没有生成器，那么这里直接全部数据都遍历一遍，如果有生成器就会卡住，一个一个来，接收到next方法才会读取下一行。
             yield row['username'], row['password']
+
+
 @pytest.mark.smoke
 @pytest.mark.parametrize('username, password', read_csv_file(r'data/data.csv'))
 def test_001(drivers, username, password):
@@ -51,8 +53,3 @@ def test_001(drivers, username, password):
     # zhufeng.log_in_button.click()
     zhufeng.click_log_in_button
     # assert drivers.current_url == 'https://exam.wzzz.fun'
-
-
-# if __name__ == '__main__':
-#     pytest.main(['--alluredir', './reports', 'vs', 'testcases/zhuifeng_tc/test_ddt_zhuifeng_csv_file.py'])
-

@@ -43,7 +43,7 @@ class TestSearch:
         zhufeng.input_account = username
         zhufeng.input_password = password
         # zhufeng.log_in_button.click()
-        zhufeng.image_code = image_identify(drivers, zhufeng.image,  'whole_pic.png', 'crop_pic.png')
+        zhufeng.image_code = image_identify(drivers, zhufeng.image,  '简单验证码.png', 'crop_pic.png')
         zhufeng.click_log_in_button
         time.sleep(3)
 
