@@ -83,7 +83,3 @@ selenium+pytest+allure+各种工具函数
 2.  新建 Feat_xxx 分支
 3.  提交代码
 4.  新建 Pull Request
-
-# 捐赠小北喝瓶水 :sunglasses: 
-![输入图片说明](screenshots/%E6%94%AF%E4%BB%98%E5%AE%9D%E6%94%AF%E4%BB%98%E7%A0%81.jpg)
-![输入图片说明](%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E7%A0%81.jpg)
