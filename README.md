@@ -1,10 +1,3 @@
-# 小北原创UI自动化高阶框架selenium+pytest
-
-#### 介绍
-免费开源的高级selenium自动化框架，开箱即用，复用性高，可适用任何web项目中
-原创作者：小北
-微信：xiaobei_upup
-
 #### 软件架构
 软件架构说明
 
@@ -28,25 +21,10 @@
         颜色识别库
         opencv-python
 
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-# 小北原创UI自动化高阶框架selenium+pytest+allure+各种高级工具函数
-
-## 免费开源的高级selenium的UI自动化框架，开箱即用，复用性高，可适用任何web项目中
-## 原创作者：小北
-## 微信：xiaobei_upup   扫码可添加作者答疑
-![输入图片说明](screenshots/888f3f9e1e8bd0a003aac3d204afaa8.jpg)
-
 # 软件架构
 selenium+pytest+allure+各种工具函数
 
-# 小北原创高级UI自动化框架亮点 ：
+# 高级UI自动化框架亮点 ：
         1、使用pytest-xdist多线程并发执行测试用例，显著缩短用例执行时间
         2、使用pytest-rerunfailures的库实现失败用例重跑的功能
         3、使用cv2和numpy和pillow实现组件的颜色识别功能，能够完成一些跟颜色相关的用例覆盖
@@ -76,10 +54,3 @@ selenium+pytest+allure+各种工具函数
         5、【运行含有allure测试报告的测试用例】使用pytest运行allure测试报告，只需要使用pytest即可，因为pytest.ini文件中已经配置好了allure的配置参数
         6、【查看allure测试报告】启动浏览器去查看allure测试报告，使用  allure serve ./reports
         7、【选择哪些用例去执行】运行哪些测试用例，冒烟?回归？还是所有用例？在pytest.ini文件中修改addopts中的-m参数，-m "smoke" 即为冒烟！
-
-# 参与贡献
-后续可以进行对本仓库的贡献，不过现在暂时未开放全面的贡献机制
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
